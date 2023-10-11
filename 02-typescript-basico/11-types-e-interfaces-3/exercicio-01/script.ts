@@ -11,7 +11,7 @@ interface Produto {
     seguroAcidentes: boolean;
     empresaFabricante: Empresa;
     empresaMontadora: Empresa;
-};
+}
 
 async function fetchProduct() {
     const response = await fetch('https://api.origamid.dev/json/notebook.json');
