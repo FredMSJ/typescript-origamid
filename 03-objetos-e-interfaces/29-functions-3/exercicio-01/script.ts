@@ -1,6 +1,3 @@
-
-
-
 function stringOrNumber(param : number ): number;
 function stringOrNumber(param : string): string;
 function stringOrNumber(param : number | string): number | string {
