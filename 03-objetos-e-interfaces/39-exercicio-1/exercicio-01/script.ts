@@ -12,10 +12,8 @@ window.UserData = {};
 
 //typeguard
 function isUserData(value: unknown): value is UserData {
-    if(value && typeof value === "object" &&
-        "nome" in value &&
-        "email" in value &&
-        "cpf" in value
+    if(value && typeof value === "object" && 
+    ("nome" in value || "email" in value || "cpf" in value)
     ) {
         return true;
     }

@@ -3,9 +3,7 @@ window.UserData = {};
 //typeguard
 function isUserData(value) {
     if (value && typeof value === "object" &&
-        "nome" in value &&
-        "email" in value &&
-        "cpf" in value) {
+        ("nome" in value || "email" in value || "cpf" in value)) {
         return true;
     }
     return false;
